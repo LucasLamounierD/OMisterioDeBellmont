@@ -28,7 +28,7 @@ public class QuickMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		float speed=0.0f;
+		float speed=8.5f;
 		if (FController.isGrounded) 
 		 	{
 			FMoveDir = new Vector3(0, 0, Input.GetAxisRaw("Vertical"));
