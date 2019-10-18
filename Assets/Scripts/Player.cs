@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
 
     public float speed;
+
+    public ArrayList items = new ArrayList();
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKey(KeyCode.LeftShift) && speed < 5)
             speed += 0.1f;
         else if(!Input.GetKey(KeyCode.LeftShift) && speed > 2.5)
