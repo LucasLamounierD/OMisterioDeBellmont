@@ -8,13 +8,19 @@ public class ColideWithObject : MonoBehaviour
 	// com a convenção de encapsulamento e segurança
 	// de código C#.
  
+ 	public GameObject player;
+
 	[SerializeField] private Color32 _normalColor = new Color32(100, 100, 100,100);
 	[SerializeField] private Color32 _highlightColor = new Color32(100, 200, 200,200);
 	[SerializeField] private Color32 _activeColor = new Color32(255, 255, 255,255);
  
 	private Renderer _renderer; // Todos os renderizadores derivam da classe Renderer.
  
-	private void Awake ()
+	void Start(){
+		player = GameObject.FindWithTag("Player");
+	}
+
+		private void Awake ()
 	{
 		_renderer = GetComponent<Renderer>();
 		_renderer.material.color = _normalColor;
@@ -27,7 +33,11 @@ public class ColideWithObject : MonoBehaviour
  
 	private void OnMouseDown ()
 	{
-		GetComponent<Light>().enabled = !GetComponent<Light>().enabled;
+		//GetComponent<Light>().enabled = !GetComponent<Light>().enabled;
+		if(this.tag == "Pista"){
+			Destroy(this.gameObject);
+			player.GetComponent<Player>().pistas.Add("Pista");
+		}
 	}
  
 	private void OnMouseExit ()

@@ -6,8 +6,8 @@ public class Player : MonoBehaviour
 {
 
     public float speed;
+    public ArrayList pistas = new ArrayList();
 
-    public ArrayList items = new ArrayList();
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +17,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        foreach( var p in pistas )
+        {
+            Debug.Log( p );
+        }
 
         if (Input.GetKey(KeyCode.LeftShift) && speed < 5)
             speed += 0.1f;
@@ -37,4 +42,5 @@ public class Player : MonoBehaviour
             transform.Translate(0, 0, -speed * Time.deltaTime);
 
     }
+
 }

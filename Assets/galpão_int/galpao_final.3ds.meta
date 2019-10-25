@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: df4bbde938f79364e81c801df203eba6
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: chao
+    100002: chao_sup
+    100004: chao_sup_e
+    100006: corrimao
+    100008: Default
+    100010: estru_chao
+    100012: ferragens
+    100014: //RootNode
+    100016: paredes
+    100018: rampa
+    100020: teto
+    400000: chao
+    400002: chao_sup
+    400004: chao_sup_e
+    400006: corrimao
+    400008: Default
+    400010: estru_chao
+    400012: ferragens
+    400014: //RootNode
+    400016: paredes
+    400018: rampa
+    400020: teto
+    2100000: Default
+    2100002: chao
+    2100004: chao_sup
+    2100006: chao_sup_estru
+    2100008: corrimao
+    2100010: estru_chao+rampa
+    2100012: ferragens
+    2100014: paredes
+    2100016: rampa
+    2100018: teto
+    2300000: chao
+    2300002: chao_sup
+    2300004: chao_sup_e
+    2300006: corrimao
+    2300008: Default
+    2300010: estru_chao
+    2300012: ferragens
+    2300014: paredes
+    2300016: rampa
+    2300018: teto
+    3300000: chao
+    3300002: chao_sup
+    3300004: chao_sup_e
+    3300006: corrimao
+    3300008: Default
+    3300010: estru_chao
+    3300012: ferragens
+    3300014: paredes
+    3300016: rampa
+    3300018: teto
+    4300000: Default
+    4300002: chao
+    4300004: chao_sup
+    4300006: chao_sup_e
+    4300008: corrimao
+    4300010: estru_chao
+    4300012: ferragens
+    4300014: paredes
+    4300016: rampa
+    4300018: teto
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
