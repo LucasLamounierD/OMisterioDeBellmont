@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColideWithObject : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ColideWithObject : MonoBehaviour
 	// de código C#.
  
  	public GameObject player;
+    public GameObject Panel;
 
 	[SerializeField] private Color32 _normalColor = new Color32(100, 100, 100,100);
 	[SerializeField] private Color32 _highlightColor = new Color32(100, 200, 200,200);
@@ -35,11 +37,19 @@ public class ColideWithObject : MonoBehaviour
 	{
 		//GetComponent<Light>().enabled = !GetComponent<Light>().enabled;
 		if(this.tag == "Pista"){
-			Destroy(this.gameObject);
-			player.GetComponent<Player>().pistas.Add("Pista");
-		}
+            if (Panel != null)
+            {
+                Panel.SetActive(true);
+
+                Panel.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = this.gameObject.GetComponent<IInventoryItem>().Image;
+                player.GetComponent<Player>().currentObject = this.gameObject;
+            }
+			//player.GetComponent<Player>().pistas.Add("Pista");
+            //player.GetComponent<Player>().inventory.AddItem(this.gameObject.GetComponent<IInventoryItem>());
+            //Destroy(this.gameObject);
+        }
 	}
- 
+
 	private void OnMouseExit ()
 	{
 		_renderer.material.color = _normalColor;
