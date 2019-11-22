@@ -12,6 +12,8 @@ public class ColideWithObject : MonoBehaviour
  	public GameObject player;
     public GameObject Panel;
 
+    public GameObject camera;
+
 	[SerializeField] private Color32 _normalColor = new Color32(100, 100, 100,100);
 	[SerializeField] private Color32 _highlightColor = new Color32(100, 200, 200,200);
 	[SerializeField] private Color32 _activeColor = new Color32(255, 255, 255,255);
@@ -39,6 +41,9 @@ public class ColideWithObject : MonoBehaviour
 		if(this.tag == "Pista"){
             if (Panel != null)
             {
+				Cursor.visible = true;
+				player.GetComponent<MouseLook>().enabled = false;
+        		camera.GetComponent<MouseLook>().enabled = false;
                 Panel.SetActive(true);
 
                 Panel.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = this.gameObject.GetComponent<IInventoryItem>().Image;

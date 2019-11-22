@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         speed = 2.5f;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
