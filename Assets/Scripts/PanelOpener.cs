@@ -7,10 +7,15 @@ public class PanelOpener : MonoBehaviour
 {
     public GameObject player;
     public GameObject Panel;
+
+    public GameObject camera;
     public Sprite selectedItem = null;
 
     public void AddObject()
     {
+            player.GetComponent<MouseLook>().enabled = true;
+        	camera.GetComponent<MouseLook>().enabled = true;
+            Cursor.visible = false;
         if (Panel != null)
         {
             if(player.GetComponent<Player>().inventory.obj != null)
@@ -56,6 +61,9 @@ public class PanelOpener : MonoBehaviour
 
     public void ClosePanel()
     {
+            player.GetComponent<MouseLook>().enabled = true;
+        	camera.GetComponent<MouseLook>().enabled = true;
+            Cursor.visible = false;
         if (Panel != null)
         {
             Panel.SetActive(false);
