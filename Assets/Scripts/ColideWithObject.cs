@@ -41,7 +41,6 @@ public class ColideWithObject : MonoBehaviour
 		if(this.tag == "Pista"){
             if (Panel != null)
             {
-				Cursor.visible = true;
 				player.GetComponent<MouseLook>().enabled = false;
         		camera.GetComponent<MouseLook>().enabled = false;
                 Panel.SetActive(true);

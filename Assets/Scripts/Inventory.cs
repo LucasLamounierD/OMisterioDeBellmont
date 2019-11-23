@@ -32,6 +32,11 @@ public class Inventory : MonoBehaviour
                     ItemAdded(this, new InventoryEventArgs(item));
                 }
             }
+        }else{
+            if(myItems.Count == SLOTS){
+                Application.Quit();
+                Debug.Log("Fim");
+            }
         }
     }
 
