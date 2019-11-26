@@ -13,7 +13,7 @@ public class PanelOpener : MonoBehaviour
 
     public void AddObject()
     {
-
+        Debug.Log("ue");
         if (Panel != null)
         {
             if(player.GetComponent<Player>().inventory.obj != null)

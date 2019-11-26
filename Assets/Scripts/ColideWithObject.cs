@@ -44,7 +44,7 @@ public class ColideWithObject : MonoBehaviour
 				player.GetComponent<MouseLook>().enabled = false;
         		camera.GetComponent<MouseLook>().enabled = false;
                 Panel.SetActive(true);
-
+                Debug.Log("aoba");
                 Panel.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = this.gameObject.GetComponent<IInventoryItem>().Image;
                 player.GetComponent<Player>().currentObject = this.gameObject;
             }

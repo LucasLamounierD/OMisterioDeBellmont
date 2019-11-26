@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 [System.Serializable]
 public struct CrosshairSize
@@ -30,16 +31,18 @@ public class Crosshair : MonoBehaviour {
 
     public GameObject player;
 
+    public GameObject obj; 
+
     public GameObject camera;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
         _raycaster = Camera.main.GetComponent<InteractionRayCaster>();
 
         _raycaster.onTargetChange += ChangeCrosshair;
         _raycaster.onNoTarget += ChangeCrosshair;
 
-        img = gameObject.GetComponent<Image>(); 
+        img = gameObject.GetComponent<Image>();
 
     }
 
@@ -49,25 +52,35 @@ public class Crosshair : MonoBehaviour {
         _raycaster.onNoTarget -= ChangeCrosshair;
     }
 
-void Update(){
-if(canPick == true && _raycaster.Hit.collider.tag == "pickUp"){
-                if(Input.GetKey(KeyCode.E)){
-                    if (Panel != null)
-                                    {
-                                        
-                                        Cursor.lockState = CursorLockMode.None;
-                                        Cursor.visible = true;
+    void Update() {
+        if (canPick == true && _raycaster.Hit.collider.tag == "pickUp")
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                if (Panel != null)
+                {
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
 
-                                        Panel.SetActive(true);
+                    Panel.SetActive(true);
 
-                                        camera.GetComponent<CameraController>().enabled = false;
+                    //GraphicRaycaster gr = this.GetComponent<GraphicRaycaster>();
+                    ////Create the PointerEventData with null for the EventSystem
+                    //PointerEventData ped = new PointerEventData(null);
+                    ////Set required parameters, in this case, mouse position
+                    //ped.position = Input.mousePosition;
+                    ////Create list to receive all results
+                    //List<RaycastResult> results = new List<RaycastResult>();
+                    ////Raycast it
+                    //gr.Raycast(ped, results);
 
-                                        //Panel.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = player.GetComponent<IInventoryItem>().Image;
-                                        player.GetComponent<Player>().currentObject = this.gameObject;
-                                    }
+                    camera.GetComponent<CameraController>().enabled = false;
+                    Panel.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = _raycaster.Hit.collider.gameObject.GetComponent<IInventoryItem>().Image;
+                    player.GetComponent<Player>().currentObject = _raycaster.Hit.collider.gameObject;
                 }
             }
-}
+        }
+    }
 
     void ChangeCrosshair()
     {
