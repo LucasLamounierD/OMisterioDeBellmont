@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: b3b9e6f668a1f554ab3f8e1e50057c01
   - enabled: 1
-    path: Assets/Scenes/Interation.unity
-    guid: 95fcf8cdca7630b4f971809a9a3c4a20
+    path: Assets/Scenes/LoadBar.unity
+    guid: b68cbafe93282ee4d9faf81a1acc0a53
+  - enabled: 1
+    path: Assets/Scenes/NewCamera.unity
+    guid: 727b3ff12c63d144187a5f02b57ed6bf
   m_configObjects: {}
