@@ -712,8 +712,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cenaACarregar: NewCamera
-  TempoFixoSeg: 5
-  tipoDeCarregamento: 1
+  TempoFixoSeg: 4
+  tipoDeCarregamento: 0
   barraCarregamento: {fileID: 1299465462}
   textoProgresso: {fileID: 1723965877}
 --- !u!1 &1398929207

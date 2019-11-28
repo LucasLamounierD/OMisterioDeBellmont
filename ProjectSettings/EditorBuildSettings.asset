@@ -14,4 +14,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewCamera.unity
     guid: 727b3ff12c63d144187a5f02b57ed6bf
+  - enabled: 1
+    path: Assets/Scenes/ErrorChoice.unity
+    guid: f5ebb795b1fcc6a42bb972464a1698bf
+  - enabled: 1
+    path: Assets/Scenes/SuccessChoice.unity
+    guid: 2dcf12689a804fa41b886acb92214fee
+  - enabled: 1
+    path: Assets/Scenes/Story1.unity
+    guid: fd99b8e1c806cb6409dbf51a26476bd4
+  - enabled: 1
+    path: Assets/Scenes/Story2.unity
+    guid: bbef0ebbba090554b99ef1d28e459a7f
+  - enabled: 1
+    path: Assets/Scenes/Story3.unity
+    guid: 8280bb5ad4f3a3b479618b1d98ce97d2
   m_configObjects: {}

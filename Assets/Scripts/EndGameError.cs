@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class EndGame : MonoBehaviour
+public class EndGameError : MonoBehaviour
 {
-
-    public void openPanelEnd()
+    // Start is called before the first frame update
+   public void openPanelEnd()
     {
         //Debug.Log("aos meninus");
         //if (value.Equals("Fernando Inácio"))
@@ -15,6 +14,6 @@ public class EndGame : MonoBehaviour
         //    endGame = "Parabéns Você Descobriu Quem Cometeu os crimes";
         //}
 
-        SceneManager.LoadScene("SuccessChoice");
+        SceneManager.LoadScene("ErrorChoice");
     }
 }
