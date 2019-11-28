@@ -15,10 +15,17 @@ public class CursorController : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //Unlock Cursor
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKey(KeyCode.I) && Cursor.visible == false)
         {
+            Debug.Log(Cursor.visible);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+        }
+            if (Input.GetKey(KeyCode.I) && Cursor.visible == true)
+        {
+            Debug.Log(Cursor.visible);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
         //else if (Input.GetButtonDown("Fire1") && Cursor.visible == true){
         //    print("cursor");

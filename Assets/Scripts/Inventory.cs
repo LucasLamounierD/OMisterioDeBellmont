@@ -14,6 +14,7 @@ public class Inventory : MonoBehaviour
     public event EventHandler<InventoryEventArgs> ItemAdded;
 
     public GameObject obj = null;
+    public GameObject camera;
 
     public void AddItem(IInventoryItem item)
     {
@@ -38,6 +39,9 @@ public class Inventory : MonoBehaviour
                 SceneManager.LoadSceneAsync("ChoiceMenu");
             }
         }
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        camera.GetComponent<CameraController>().enabled = true;
     }
 
     public void RemoveItem(IInventoryItem item)
