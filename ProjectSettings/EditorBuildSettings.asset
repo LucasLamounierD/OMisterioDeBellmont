@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story3.unity
     guid: 8280bb5ad4f3a3b479618b1d98ce97d2
+  - enabled: 1
+    path: Assets/Scenes/ChoiceMenu.unity
+    guid: a204362a8cff6b941926674a8d14512d
   m_configObjects: {}
