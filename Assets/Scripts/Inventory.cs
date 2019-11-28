@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour
 {
-    private const int SLOTS = 7;
+    private const int SLOTS = 6;
 
     public List<IInventoryItem> myItems = new List<IInventoryItem>();
 
@@ -34,8 +35,7 @@ public class Inventory : MonoBehaviour
             }
         }else{
             if(myItems.Count == SLOTS){
-                Application.Quit();
-                Debug.Log("Fim");
+                SceneManager.LoadSceneAsync("ChoiceMenu");
             }
         }
     }
